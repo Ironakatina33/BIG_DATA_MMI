@@ -41,6 +41,7 @@ h2 {
 }
 
 .title-pie h3{
+    padding: 25px;
     font-size: 20px;
     color: black;
 
@@ -50,3 +51,4 @@ h2 {
     margin: 100px; /* Supprime la marge par défaut du body */
     box-sizing: border-box; /* Assure que le padding est inclus dans la largeur totale */
 }
+

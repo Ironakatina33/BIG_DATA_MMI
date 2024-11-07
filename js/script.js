@@ -1,17 +1,17 @@
 /*-------------------------------------------------------------------------------------------------------------*/
-/*-----------CHART 2------------------*/
+/*-----------CHART 1------------------*/
 /*-------------------------------------------------------------------------------------------------------------*/
 
 google.charts.load("current", { packages: ["corechart"] });
-google.charts.setOnLoadCallback(drawChart);
-function drawChart() {
-  var data = google.visualization.arrayToDataTable([
+google.charts.setOnLoadCallback(drawChart3);
+function drawChart3() {
+  var data3 = google.visualization.arrayToDataTable([
     ["Joueur?", "pourcentage"],
     ["Joueur", 82.9],
     ["Non Joueur", 17.1],
   ]);
 
-  var options = {
+  var options3 = {
     legend: {
       position: "bottom",
       textStyle: { color: "#000000", fontSize: 16 },
@@ -26,10 +26,10 @@ function drawChart() {
     },
   };
 
-  var chart = new google.visualization.PieChart(
+  var chart3 = new google.visualization.PieChart(
     document.getElementById("myChart")
   );
-  chart.draw(data, options);
+  chart3.draw(data3, options3);
 }
 
 
@@ -71,7 +71,7 @@ function drawChart1() {
 
 
 /*-------------------------------------------------------------------------------------------------------------*/
-/*-----------CHART 2------------------*/
+/*-----------CHART 3------------------*/
 /*-------------------------------------------------------------------------------------------------------------*/
 
 google.charts.setOnLoadCallback(drawChart2);
@@ -101,4 +101,31 @@ function drawChart2() {
     document.getElementById("myChart2")
   );
   chart2.draw(data2, options2);
+}
+
+
+
+/*-------------------------------------------------------------------------------------------------------------*/
+/*-----------Bar 1------------------*/
+/*-------------------------------------------------------------------------------------------------------------*/
+
+
+google.charts.load('current', {'packages':['bar']});
+google.charts.setOnLoadCallback(drawChart);
+
+function drawChart() {
+  var data = google.visualization.arrayToDataTable([
+    ['Age', '13 - 18', '19 - 24', '25 - 31','32 - 37','38 - 44','45 - 61'],
+    ['Tranches d`ages', 417.1 , 825.5, 1798.2, 1248.6, 1663.2, 396.7],
+  ]);
+
+
+  var options = {
+    colors:['#FDBDC4','#FA87A1','#F51B5C','#860028','#BB0038','#FED2FF'],
+  };
+
+  var chart = new google.charts.Bar(document.getElementById('columnchart_material'));
+
+  chart.draw(data, google.charts.Bar.convertOptions(options));
+  console.log(data);
 }
