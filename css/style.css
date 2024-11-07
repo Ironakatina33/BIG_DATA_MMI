@@ -55,7 +55,7 @@ h2 {
     text-align: center; /* Centre le titre */
     margin-bottom: 30px; /* Espace en bas du titre */
     font-family: 'Montserrat', sans-serif; /* Utilisation de Montserrat pour le titre */
-    font-size: 2em; /* Taille du titre */
+    font-size: 1.15em; /* Taille du titre */
     color: #2c3e50; /* Couleur du titre */
 }
 
@@ -82,6 +82,7 @@ h2 {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Ombre légère */
     transition: transform 0.3s; /* Transition pour l'effet de survol */
     font-size: 1.5em;
+    font-family: 'Arial', sans-serif;
 }
 
 .testanim {
@@ -125,4 +126,11 @@ h2 {
 }
 * {
     border: none; /* Supprime toutes les bordures */
+}
+.source{
+    font-size: 10px;
+    color: #555; /* Couleur grise pour les citations */
+
+    text-align: center; /* Centrer le texte */
+    background-color: white;
 }
