@@ -115,8 +115,8 @@ google.charts.setOnLoadCallback(drawChart);
 
 function drawChart() {
   var data = google.visualization.arrayToDataTable([
-    ['Age', '13 - 18', '19 - 24', '25 - 31','32 - 37','38 - 44','45 - 61'],
-    ['Tranches d`ages', 417.1 , 825.5, 1798.2, 1248.6, 1663.2, 396.7],
+    ['Tranche d\'âge', '13 - 18', '19 - 24', '25 - 31','32 - 37','38 - 44','45 - 61'],
+    [' ', 417.1 , 825.5, 1798.2, 1248.6, 1663.2, 396.7],
   ]);
 
 
