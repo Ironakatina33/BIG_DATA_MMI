@@ -1,0 +1,35 @@
+.pourcent-joueur{
+    display: flex;
+    justify-content: center ;
+
+}
+
+
+body {
+    margin: 0; /* Supprime la marge par défaut du body */
+
+    box-sizing: border-box; /* Assure que le padding est inclus dans la largeur totale */
+}
+
+h1 {
+    text-align: center; /* Centre le texte */
+    font-size: 2.5em; /* Taille de la police */
+    color: #4A90E2; /* Couleur du texte */
+    margin: 20px 0; /* Marge en haut et en bas */
+    font-family: 'Arial', sans-serif; /* Police de caractère */
+}
+
+h2 {
+    text-align: center; /* Centre le texte */
+    font-size: 1.8em; /* Taille de la police */
+    color: #7B7B7B; /* Couleur du texte */
+    margin: 15px 0; /* Marge en haut et en bas */
+    font-family: 'Arial', sans-serif; /* Police de caractère */
+    line-height: 1.5; /* Hauteur de ligne pour le texte */
+    padding-left: 200px; /* Ajoute un rembourrage autour du contenu */
+    padding-right: 200px; /* Ajoute un rembourrage autour du contenu */
+}
+
+.title1{
+    justify-content: center;
+}
