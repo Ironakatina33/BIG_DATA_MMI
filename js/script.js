@@ -18,7 +18,8 @@ function drawChart3() {
     },
     pieStartAngle: 90,
     pieSliceBorderColor: "none",
-    pieSliceTextStyle: { color: "red" },
+    chartArea: { width: "150%", height: "75%" },
+    pieSliceTextStyle: { color: "black" },
 
     slices: {
       0: { color: "#F8517F" },
@@ -53,8 +54,8 @@ function drawChart1() {
     },
     pieStartAngle: 90,
     pieSliceBorderColor: "none",
-    pieSliceTextStyle: { color: "red" },
-    chartArea: { width: "150%", height: "75%" },
+    pieSliceTextStyle: { color: "black" },
+    chartArea: { width: "200%", height: "75%" },
     slices: {
       0: { color: "#F8517F" },
       1: { color: "FDBDC4" },
@@ -89,7 +90,8 @@ function drawChart2() {
     },
     pieStartAngle: 90,
     pieSliceBorderColor: "none",
-    pieSliceTextStyle: { color: "red" },
+    chartArea: { width: "150%", height: "75%" },
+    pieSliceTextStyle: { color: "black" },
 
     slices: {
       0: { color: "#F8517F" },
@@ -115,7 +117,7 @@ google.charts.setOnLoadCallback(drawChart);
 
 function drawChart() {
   var data = google.visualization.arrayToDataTable([
-    ['Tranche d\'âge', '13 - 18', '19 - 24', '25 - 31','32 - 37','38 - 44','45 - 61'],
+    ['Tranche d\'âge', '13 - 18 ans', '19 - 24 ans', '25 - 31 ans ','32 - 37 ans','38 - 44 ans','45 - 61 ans'],
     [' ', 417.1 , 825.5, 1798.2, 1248.6, 1663.2, 396.7],
   ]);
 
