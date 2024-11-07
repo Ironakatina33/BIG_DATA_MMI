@@ -55,8 +55,6 @@ function drawChart1() {
     pieSliceBorderColor: "none",
     pieSliceTextStyle: { color: "red" },
     chartArea: { width: "150%", height: "75%" },
-    title: "Pourcentage d’utilisateur jouant aux jeux vidéos en France",
-    titleTextStyle: {},
     slices: {
       0: { color: "#F8517F" },
       1: { color: "FDBDC4" },
