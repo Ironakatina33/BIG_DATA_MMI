@@ -196,3 +196,24 @@ function drawChart7() {
   );
   chart7.draw(data7, options7);
 }
+
+
+
+google.charts.setOnLoadCallback(drawChart9);
+
+function drawChart9() {
+  var data9 = google.visualization.arrayToDataTable([
+    ['proportion de largent dépensé par type dachat', 'Abonnement', 'Free 2 Play', 'Achat Unique'],
+    [' ', 100 , 87, 60],
+  ]);
+
+
+  var options9 = {
+    colors:['#FDBDC4','#FA87A1','#F51B5C','#860028','#BB0038','#FED2FF'],
+  };
+
+  var chart9 = new google.charts.Bar(document.getElementById('columnchart_material9'));
+
+  chart9.draw(data9, google.charts.Bar.convertOptions(options9));
+  console.log(data9);
+}
