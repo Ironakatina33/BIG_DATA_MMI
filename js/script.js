@@ -143,20 +143,56 @@ google.charts.setOnLoadCallback(drawChart6);
 function drawChart6() {
   var databar = google.visualization.arrayToDataTable([
     ['Questions', 'Oui', 'Non'],
-    ['Déjà acheté un jeu.', 185, 13],
-    ['Déjà payer dans un jeu Free To Play', 113, 85],
-    ['Déjà payer dans un jeu Pay To Play', 65, 133],
+    ['acheté un jeu.', 185, 13],
+    ['payer dans un jeu Free To Play', 113, 85],
+    ['payer dans un jeu Pay To Play', 65, 133],
   ]);
 
   var options = {
-    chart: {
-      title: 'Company Performance',
-      subtitle: 'Sales, Expenses, and Profit: 2014-2017',
+    chart6: {
+     colors:['#FDBDC4','#F8517F'],
     },
     bars: 'horizontal' // Required for Material Bar Charts.
   };
 
-  var chart = new google.charts.Bar(document.getElementById('barchart_material'));
+  var chart6 = new google.charts.Bar(document.getElementById('barchart_material'));
 
-  chart.draw(databar, google.charts.Bar.convertOptions(options));
+  chart6.draw(databar, google.charts.Bar.convertOptions(options));
+}
+
+
+/*-------------------------------------------------------------------------------------------------------------*/
+/*-----------CHART 4------------------*/
+/*-------------------------------------------------------------------------------------------------------------*/
+
+google.charts.setOnLoadCallback(drawChart7);
+function drawChart7() {
+  var data7 = google.visualization.arrayToDataTable([
+    ["part de l'argent moyen dépensés par type de jeu", "pourcentage"],
+    ["Free 2 Play", 87],
+    ["Abonnement", 100],
+    ["Achat Unique", 60],
+  ]);
+
+  var options7 = {
+    legend: {
+      position: "bottom",
+      textStyle: { color: "#000000", fontSize: 16 },
+    },
+    pieStartAngle: 90,
+    pieSliceBorderColor: "none",
+    chartArea: { width: "150%", height: "75%" },
+    pieSliceTextStyle: { color: "black" },
+
+    slices: {
+      0: { color: "#F8517F" },
+      1: { color: "FDBDC4" },
+      2: { color: "F51B5C"} ,
+    },
+  };
+
+  var chart7 = new google.visualization.PieChart(
+    document.getElementById("myChart7")
+  );
+  chart7.draw(data7, options7);
 }
