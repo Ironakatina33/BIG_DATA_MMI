@@ -203,7 +203,7 @@ google.charts.setOnLoadCallback(drawChart9);
 
 function drawChart9() {
   var data9 = google.visualization.arrayToDataTable([
-    ['proportion de largent dépensé par type dachat', 'Abonnement', 'Free 2 Play', 'Achat Unique'],
+    ['Proportion d\'argent dépensé par type d\'achat', 'Abonnement', 'Free 2 Play', 'Achat Unique'],
     [' ', 100 , 87, 60],
   ]);
 
