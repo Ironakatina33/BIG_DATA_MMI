@@ -142,6 +142,10 @@ h3 {
     background: white; /* Couleur de fond de la vague */
     clip-path: polygon(0 0, 10% 25%, 20% 20%, 30% 35%, 40% 20%, 50% 50%, 60% 30%, 70% 35%, 80% 20%, 90% 25%, 100% 0);
 }
+.columchart_responsive {
+    width: 90%; /* Ajustement pour les petits écrans */
+
+}
 
 /*--------------------------------------------------------------------------------------------------
 ------------------------------------------RESPONSIVE 1-------------------------------------------------
@@ -183,6 +187,13 @@ h3 {
         transition: transform 0.3s;
         font-size: 1.3rem;
         font-family: 'Arial', sans-serif;
+    }
+    .columchart_responsive {
+        width: 100%; /* Ajustement pour les petits écrans */
+
+    }
+    .paragraph-container{
+        display: block;
     }
 }
 
