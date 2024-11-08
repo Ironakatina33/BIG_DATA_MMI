@@ -142,7 +142,7 @@ h2 {
     }
     h1 {
         text-align: center;
-        font-size: 3rem; /* Utilisation d'unités relatives */
+        font-size: 2.5rem; /* Utilisation d'unités relatives */
         color: #ffffff;
         margin: 2rem 0; /* Utilisation d'unités relatives */
         font-family: 'Arial', sans-serif;
@@ -151,7 +151,7 @@ h2 {
     
     h2 {
         text-align: center;
-        font-size: 1.3rem; /* Utilisation d'unités relatives */
+        font-size: 1.5rem; /* Utilisation d'unités relatives */
         color: #ffffff;
         font-family: 'Arial', sans-serif;
         line-height: 1.5;
