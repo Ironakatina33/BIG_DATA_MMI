@@ -131,3 +131,32 @@ function drawChart() {
   chart.draw(data, google.charts.Bar.convertOptions(options));
   console.log(data);
 }
+
+/*-------------------------------------------------------------------------------------------------------------*/
+/*-----------Bar 2------------------*/
+/*-------------------------------------------------------------------------------------------------------------*/
+
+
+
+google.charts.setOnLoadCallback(drawChart6);
+
+function drawChart6() {
+  var databar = google.visualization.arrayToDataTable([
+    ['Questions', 'Oui', 'Non'],
+    ['Déjà acheté un jeu.', 1000, 400],
+    ['Déjà payer dans un jeu Free To Play', 1170, 460],
+    ['Déjà payer dans un jeu Pay To Play', 660, 1120],
+  ]);
+
+  var options = {
+    chart: {
+      title: 'Company Performance',
+      subtitle: 'Sales, Expenses, and Profit: 2014-2017',
+    },
+    bars: 'horizontal' // Required for Material Bar Charts.
+  };
+
+  var chart = new google.charts.Bar(document.getElementById('barchart_material'));
+
+  chart.draw(databar, google.charts.Bar.convertOptions(options));
+}
