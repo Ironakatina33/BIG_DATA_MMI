@@ -140,5 +140,23 @@ h2 {
         font-size: 1rem; /* Utilisation d'unités relatives */
         color: black;
     }
+    h1 {
+        text-align: center;
+        font-size: 3rem; /* Utilisation d'unités relatives */
+        color: #ffffff;
+        margin: 2rem 0; /* Utilisation d'unités relatives */
+        font-family: 'Arial', sans-serif;
+        padding-bottom: 5rem; /* Utilisation d'unités relatives */
+    }
+    
+    h2 {
+        text-align: center;
+        font-size: 1.3rem; /* Utilisation d'unités relatives */
+        color: #ffffff;
+        font-family: 'Arial', sans-serif;
+        line-height: 1.5;
+        padding: 2rem 10%; /* Utilisation de pourcentages pour le rembourrage */
+    }
+
 }
 
