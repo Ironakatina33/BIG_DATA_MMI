@@ -143,9 +143,9 @@ google.charts.setOnLoadCallback(drawChart6);
 function drawChart6() {
   var databar = google.visualization.arrayToDataTable([
     ['Questions', 'Oui', 'Non'],
-    ['Déjà acheté un jeu.', 1000, 400],
-    ['Déjà payer dans un jeu Free To Play', 1170, 460],
-    ['Déjà payer dans un jeu Pay To Play', 660, 1120],
+    ['Déjà acheté un jeu.', 185, 13],
+    ['Déjà payer dans un jeu Free To Play', 113, 85],
+    ['Déjà payer dans un jeu Pay To Play', 65, 133],
   ]);
 
   var options = {

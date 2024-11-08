@@ -157,6 +157,14 @@ h2 {
         line-height: 1.5;
         padding: 2rem 10%; /* Utilisation de pourcentages pour le rembourrage */
     }
-
+    .pg1 p {
+        width: 90%; /* Ajustement pour les petits écrans */
+        color: #ffffff;
+        padding: 1rem; /* Utilisation d'unités relatives */
+        border-radius: 10px;
+        transition: transform 0.3s;
+        font-size: 1.3rem;
+        font-family: 'Arial', sans-serif;
+    }
 }
 
